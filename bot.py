@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 import requests
-from config import TOKEN 
+import asyncio
+import os
 
 intents = discord.Intents.all()
 bot = commands.Bot(intents=intents, command_prefix="!")
@@ -11,7 +12,7 @@ async def anime(ctx, *, nome_anime: str):
     # Envie uma mensagem de escolha ao usuário
     message = (
         "Escolha o tipo:\n"
-        "1. **TV**\n"
+        "1. **Anime**\n"
         "2. **Movie**\n"
         "3. **Ova**"
     )
@@ -46,7 +47,7 @@ async def anime(ctx, *, nome_anime: str):
         popularity = data['data'][0]['popularity'] 
         synopsis = data['data'][0]['synopsis'] 
         max_length_synopsis = 200
-#a
+
         if len(synopsis) > max_length_synopsis: # limits synopsis range
             truncated_text = synopsis[:max_length_synopsis] + "[...]"
         else:
@@ -82,4 +83,4 @@ async def anime(ctx, *, nome_anime: str):
     except (KeyError, IndexError):
         await ctx.send("Não foi possível encontrar informações sobre o anime.")
 
-bot.run(TOKEN)
+bot.run(os.getenv("BOT_TOKEN"))
