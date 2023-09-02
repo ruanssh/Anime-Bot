@@ -1,2 +1,11 @@
-# ani_bot
-A simple Anime Discord bot for fetching data from the Jikan REST API.
+# Ani Bot
+
+Welcome to your project! This README provides important information on how to set up and run the project.
+
+## Dependencies
+
+Before using this project, ensure you have the following Python libraries installed:
+
+```bash
+pip install discord.py
+pip install requests
