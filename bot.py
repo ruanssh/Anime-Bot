@@ -46,7 +46,7 @@ async def anime(ctx, *, nome_anime: str):
         popularity = data['data'][0]['popularity'] 
         synopsis = data['data'][0]['synopsis'] 
         max_length_synopsis = 200
-
+#a
         if len(synopsis) > max_length_synopsis: # limits synopsis range
             truncated_text = synopsis[:max_length_synopsis] + "[...]"
         else:
