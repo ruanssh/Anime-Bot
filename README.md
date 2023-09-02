@@ -1,6 +1,6 @@
 # Ani Bot
 
-Welcome to your project! This README provides important information on how to set up and run the project.
+Welcome to my project! This README provides important information on how to set up and run the project.
 
 ## Dependencies
 
