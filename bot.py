@@ -9,7 +9,6 @@ bot = commands.Bot(intents=intents, command_prefix="!")
 
 @bot.command(name="anime")
 async def anime(ctx, *, nome_anime: str): 
-    # Envie uma mensagem de escolha ao usuário
     message = (
         "Escolha o tipo:\n"
         "1. **Anime**\n"
