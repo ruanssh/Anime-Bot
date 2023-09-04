@@ -5,7 +5,8 @@ Welcome to my project!
 ## Description
 
 A simple Anime Discord bot for fetching data from the Jikan REST API.
-![Veja aqui](https://i.imgur.com/E3w2rAk.gif)
+
+![see it working](https://i.imgur.com/E3w2rAk.gif)
 
 ## Dependencies
 
